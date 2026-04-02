@@ -1,0 +1,7 @@
+@theme "cyberpunk"
+configuration {
+    show-icons: true;
+    display-drun: "";
+    drun-display-format: "{name}";
+    modes: "drun";
+}

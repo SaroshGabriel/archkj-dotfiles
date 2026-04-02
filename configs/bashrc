@@ -1,0 +1,14 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='\[\e[1;35m\][\u@\h \W]\$ \[\e[0m\] '
+alias dft="cd ~/Projects/dft && source dft-env/bin/activate"
+alias undft="deactivate && cd ~"
+export PATH="$PATH:/home/KJ/.local/bin"
+alias ts="smart-timeshift"

@@ -1,0 +1,63 @@
+* {
+    bg: rgba(10, 10, 20, 0.95);
+    bg-alt: rgba(239, 57, 70, 0.1);
+    fg: #ffffff;
+    fg-alt: #EF3946;
+    border-color: #EF3946;
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+window {
+    background-color: @bg;
+    border: 2px;
+    border-color: @border-color;
+    border-radius: 12px;
+    width: 500px;
+}
+
+mainbox {
+    background-color: transparent;
+    padding: 10px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 0 0 10px 0;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg;
+    placeholder: "Search...";
+    placeholder-color: #444466;
+}
+
+prompt {
+    enabled: false;
+}
+
+listview {
+    background-color: transparent;
+    lines: 8;
+    scrollbar: false;
+    spacing: 4px;
+}
+
+element {
+    background-color: transparent;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-color: rgba(255, 255, 255, 0.6);
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color: @fg-alt;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}

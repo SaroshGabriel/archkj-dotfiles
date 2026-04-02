@@ -1,0 +1,133 @@
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    border: none;
+}
+
+/* Left container - workspaces */
+#workspaces {
+    background: rgba(10, 10, 20, 0.9);
+    border: 1px solid rgba(239, 57, 70, 0.4);
+    border-radius: 12px;
+    margin: 6px 0 6px 8px;
+    padding: 0 6px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 2px;
+    font-size: 19px;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: #EF3946;
+    background: rgba(239, 57, 70, 0.2);
+    border-bottom: 2px solid #EF3946;
+}
+
+#workspaces button:hover {
+    background: rgba(239, 57, 70, 0.1);
+    color: #ff6b6b;
+}
+
+/* Center container - clock */
+
+
+/* Right container - all modules */
+#custom-power,
+#custom-spotify,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#tray {
+    background: transparent;
+    color: #ffffff;
+    padding: 0 8px;
+}
+
+.modules-right {
+    background: rgba(10, 10, 20, 0.9);
+    border: 1px solid rgba(239, 57, 70, 0.4);
+    border-radius: 12px;
+    margin: 6px 8px 6px 0;
+    padding: 0 4px;
+}
+
+#custom-power {
+    color: #EF3946;
+    font-size: 16px;
+    padding: 0 12px;
+}
+
+#custom-power:hover {
+    background: rgba(239, 57, 70, 0.3);
+    border-radius: 8px;
+}
+
+#cpu { color: #ff6b6b; }
+#memory { color: #EF3946; }
+#temperature { color: #ffaa00; }
+#temperature.critical { color: #ff0000; background: rgba(255,0,0,0.2); border-radius: 8px; }
+#battery { color: #EF3946; }
+#battery.warning { color: #ffaa00; }
+#battery.critical { color: #ff0000; animation: blink 1s infinite; }
+#network { color: #ff6b6b; }
+#pulseaudio { color: #EF3946; }
+#pulseaudio.muted { color: #444466; }
+#custom-spotify { color: #ffffff; font-style: italic; }
+#tray { padding: 0 8px; }
+
+@keyframes blink {
+    to { opacity: 0.3; }
+}
+
+#bluetooth {
+    color: #6b9fff;
+    padding: 0 8px;
+}
+
+#bluetooth.connected {
+    color: #6b9fff;
+}
+
+#bluetooth.off {
+    color: #444466;
+}
+
+#custom-netspeed {
+    color: #50fa7b;
+    padding: 0 8px;
+    font-size: 12px;
+}
+
+
+
+#clock {
+    background: rgba(10, 10, 20, 0.9);
+    border: 1px solid rgba(239, 57, 70, 0.4);
+    border-radius: 12px;
+    margin: 6px 0;
+    padding: 0 16px;
+    color: #EF3946;
+    font-weight: bold;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 2px;
+    font-size: 19px;
+    background: transparent;
+}

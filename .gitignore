@@ -1,0 +1,20 @@
+# Secrets — never commit these
+*.env
+*.key
+*.pem
+*.token
+*secret*
+*password*
+*credential*
+
+# Personal/machine-specific
+configs/hypr/monitors.conf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files (add wallpapers via git lfs if needed)
+*.mkv
+*.mp4
+*.iso
