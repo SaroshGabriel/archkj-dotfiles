@@ -27,7 +27,7 @@ If it works, proceed to fstab.
 ## Step 4 — Add to /etc/fstab
 
 ```bash
-echo "UUID=YOUR_UUID_HERE /mnt/HDD1 ntfs-3g defaults,uid=1000,gid=1000,dmask=022,fmask=133 0 0" | sudo tee -a /etc/fstab
+echo "UUID=YOUR_UUID_HERE /mnt/HDD1 ntfs-3g defaults,uid=1000,gid=1000,dmask=022,fmask=133,nofail 0 0" | sudo tee -a /etc/fstab
 ```
 
 Replace `YOUR_UUID_HERE` with the actual UUID from `lsblk -f`.
