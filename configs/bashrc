@@ -12,3 +12,118 @@ alias dft="cd ~/Projects/dft && source dft-env/bin/activate"
 alias undft="deactivate && cd ~"
 export PATH="$PATH:/home/KJ/.local/bin"
 alias ts="smart-timeshift"
+export ANTHROPIC_API_KEY=sk-ant-...
+
+alias gclone='git clone --recurse-submodules'
+
+alias pacfiles='pacman -Ql'
+
+alias gpl='git pull'
+
+alias orphans='pacman -Qdtq'
+
+alias top='htop 2>/dev/null || top'
+
+alias ipy='ipython3'
+
+alias restart='systemctl reboot'
+
+alias proj='cd "$PROJECT_BASE"'
+
+alias ll='ls -la --color=auto'
+
+alias aliases='cat ~/.bashrc | grep "^alias" | sed "s/alias //" | sort'
+
+alias la='ls -A --color=auto'
+
+alias bashrev='cd "$PROJECT_BASE/bashRev"'
+
+alias lst='ls -lt --color=auto'
+
+alias lss='ls -lSh --color=auto'
+
+alias bye='systemctl poweroff'
+
+alias snapr='hyprshot -m region -o ~/Pictures/ -s'
+
+alias df='df -h'
+
+alias cleanup='sudo pacman -Rns $(pacman -Qdtq) 2>/dev/null || echo "No orphans found"'
+
+alias du='du -sh'
+
+alias pyrev='cd "$PROJECT_BASE/pythonRev"'
+
+alias pyreq='pip freeze > requirements.txt && echo "✅ requirements.txt generated"'
+
+alias log='cd "$PROJECT_BASE/march-learning-log" && nano march_log.md'
+
+alias glog='git log --oneline --graph --all'
+
+alias swpause='bash ~/.config/waybar/scripts/timer.sh toggle'
+
+alias pacinfo='pacman -Qi'
+
+alias pacman='sudo pacman --noconfirm'
+
+alias sw='bash ~/.config/waybar/scripts/timer.sh switch && bash ~/.config/waybar/scripts/timer.sh toggle'
+
+alias c='clear'
+
+alias wallpaper='swww img'
+
+alias free='free -h'
+
+alias py='python3'
+
+alias gswitch='git checkout'
+
+alias pacs='pacman -Ss'
+
+alias pacr='sudo pacman -Rns'
+
+alias gbranch='git branch -a'
+
+alias paci='sudo pacman -S --noconfirm'
+
+alias streamlit-run='streamlit run'
+
+alias venv-new='python3 -m venv .venv && source .venv/bin/activate'
+
+alias venv='source .venv/bin/activate'
+
+alias ports='ls /dev/tty{USB,ACM}* 2>/dev/null || echo "No serial devices found"'
+
+alias timer='bash ~/.config/waybar/scripts/timer.sh set'
+
+alias aliasgrep='grep -i --color=auto "alias" ~/.bashrc | grep'
+
+alias gday='git add . && git commit -m "Daily progress: $(date +%Y-%m-%d)" && git push'
+
+alias gnew='git checkout -b'
+
+alias wb='killall waybar; waybar & disown'
+
+alias jup='jupyter lab'
+
+alias swreset='bash ~/.config/waybar/scripts/timer.sh reset'
+
+alias update='sudo pacman -Syu'
+
+alias myip='hostname -I'
+
+alias gundo='git reset --soft HEAD~1'
+
+alias ga='git add .'
+
+alias gc='git commit -m'
+
+alias gp='git push'
+
+alias gs='git status'
+
+alias mkdir='mkdir -p'
+
+alias snap='hyprshot -m output -o ~/Pictures/ -s'
+
+alias pyinstall='pip install -r requirements.txt'
