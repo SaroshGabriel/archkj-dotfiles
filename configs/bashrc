@@ -123,3 +123,6 @@ alias snap='hyprshot -m output -o ~/Pictures/ -s'
 
 alias pyinstall='pip install -r requirements.txt'
 alias logind-reload='sudo systemctl kill -s HUP systemd-logind'
+
+# NiftyMonitor
+alias nifty='cd ~/LinuxScripts/niftyMonitor && source .venv/bin/activate && python stock_monitor.py'
