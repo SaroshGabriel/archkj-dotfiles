@@ -127,3 +127,4 @@ alias mkdir='mkdir -p'
 alias snap='hyprshot -m output -o ~/Pictures/ -s'
 
 alias pyinstall='pip install -r requirements.txt'
+alias logind-reload='sudo systemctl kill -s HUP systemd-logind'

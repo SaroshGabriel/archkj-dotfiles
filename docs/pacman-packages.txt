@@ -20,12 +20,14 @@ discover
 drkonqi
 dunst
 efibootmgr
+ethtool
 firefox
 flatpak-kcm
 gimp
 git
 github-cli
 gnome-keyring
+grsync
 grub
 gst-plugins-ugly
 gwenview
@@ -76,6 +78,7 @@ nano
 network-manager-applet
 networkmanager
 networkmanager-dmenu-git
+ntfs-3g
 ocean-sound-theme
 oxygen
 oxygen-cursors
@@ -111,6 +114,7 @@ qqc2-breeze-style
 qt5ct
 rofi
 s-tui
+samba
 sddm
 sddm-kcm
 spectacle
@@ -127,6 +131,7 @@ tree
 ttf-jetbrains-mono-nerd
 udiskie
 unzip
+usbutils
 vim
 visual-studio-code-bin
 vlc
