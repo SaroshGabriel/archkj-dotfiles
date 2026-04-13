@@ -126,3 +126,6 @@ alias logind-reload='sudo systemctl kill -s HUP systemd-logind'
 
 # NiftyMonitor
 alias nifty='cd ~/LinuxScripts/niftyMonitor && source .venv/bin/activate && python stock_monitor.py'
+
+# Show Hyprland keybinds
+alias shortcuts='grep "^bind" ~/.config/hypr/hyprland.conf'
