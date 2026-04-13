@@ -17,10 +17,12 @@ cliphist
 deluge
 deluge-gtk
 discover
+dosfstools
 drkonqi
 dunst
 efibootmgr
 ethtool
+exfatprogs
 firefox
 flatpak-kcm
 gimp
@@ -124,6 +126,7 @@ systemsettings
 tailscale
 tcl
 telegram-desktop
+testdisk
 thunar
 timeshift
 tk
