@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces", "custom/spotify", "custom/terminal", "custom/launcher", "custom/screenshot", "custom/sysmon"],
     "modules-center": ["custom/clock"],
-    "modules-right": ["custom/power", "pulseaudio", "network", "custom/netspeed", "bluetooth", "cpu", "memory", "temperature", "tray"],
+    "modules-right": ["custom/power", "pulseaudio", "network", "custom/netspeed", "bluetooth", "cpu", "memory", "temperature", "custom/battery", "tray"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -93,6 +93,13 @@
     "custom/power": {
         "format": "⏻",
         "on-click": "/home/KJ/.config/rofi/powermenu.sh",
+        "tooltip": false
+    },
+
+    "custom/battery": {
+        "exec": "~/.config/waybar/battery.sh",
+        "interval": 30,
+        "format": "{}",
         "tooltip": false
     },
 
