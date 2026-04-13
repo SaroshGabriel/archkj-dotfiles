@@ -60,17 +60,14 @@ alias log='cd "$PROJECT_BASE/march-learning-log" && nano march_log.md'
 
 alias glog='git log --oneline --graph --all'
 
-alias swpause='bash ~/.config/waybar/scripts/timer.sh toggle'
 
 alias pacinfo='pacman -Qi'
 
 alias pacman='sudo pacman --noconfirm'
 
-alias sw='bash ~/.config/waybar/scripts/timer.sh switch && bash ~/.config/waybar/scripts/timer.sh toggle'
 
 alias c='clear'
 
-alias wallpaper='swww img'
 
 alias free='free -h'
 
@@ -94,7 +91,6 @@ alias venv='source .venv/bin/activate'
 
 alias ports='ls /dev/tty{USB,ACM}* 2>/dev/null || echo "No serial devices found"'
 
-alias timer='bash ~/.config/waybar/scripts/timer.sh set'
 
 alias aliasgrep='grep -i --color=auto "alias" ~/.bashrc | grep'
 
@@ -106,7 +102,6 @@ alias wb='killall waybar; waybar & disown'
 
 alias jup='jupyter lab'
 
-alias swreset='bash ~/.config/waybar/scripts/timer.sh reset'
 
 alias update='sudo pacman -Syu'
 
