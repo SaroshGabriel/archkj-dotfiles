@@ -4,7 +4,7 @@ import os
 import datetime
 
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-report_dir = "/home/KJ/preTimeshiftReports"
+report_dir = "/home/KJ/Logs/preTimeshift"
 os.makedirs(report_dir, exist_ok=True)  # FIX: create dir if missing
 report_path = f"{report_dir}/preTimeshiftReport_{timestamp}.log"
 
